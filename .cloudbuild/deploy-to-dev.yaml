@@ -50,6 +50,7 @@ steps:
 substitutions:
   _REGION: us-central1
   _ARTIFACT_REGISTRY_REPO_NAME: spark-search-repo
+  _CONTAINER_NAME: adk-agent-apps
 
 logsBucket: gs://${PROJECT_ID}-adk-agent-apps-logs-data/build-logs
 options:
