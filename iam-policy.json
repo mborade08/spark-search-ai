@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "role": "roles/run.viewer",
+      "members": [
+        "allAuthenticatedUsers"
+      ]
+    },
+    {
+       "role": "roles/run.invoker",
+      "members": [
+        "allAuthenticatedUsers"
+      ] 
+    },
+    {
+       "role": "roles/run.admin",
+      "members": [
+        "user:mangesh.borade@onixnet.com",
+        "user:jyothis.das@onixnet.com"
+      ] 
+    }
+  ]
+}
