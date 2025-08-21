@@ -33,7 +33,7 @@ trace.set_tracer_provider(provider)
 
 AGENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-app: FastAPI = get_fast_api_app(agents_dir=AGENT_DIR, web=os.getenv('SERVE_WEB_INTERFACE', False), reload_agents=True)
+app: FastAPI = get_fast_api_app(agents_dir=AGENT_DIR, web=os.getenv('SERVE_WEB_INTERFACE', True), reload_agents=True)
 
 app.title = "adk-agent-apps"
 app.description = "API for interacting with the Agents"
